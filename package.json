@@ -1,5 +1,5 @@
 {
-  "name": "gulp-test",
+  "name": "static-markup-starter",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "dependencies": {
