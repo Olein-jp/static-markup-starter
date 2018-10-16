@@ -1,19 +1,19 @@
-var gulp         = require( 'gulp' );
-var sass         = require( 'gulp-sass' );
-var autoprefixer = require( 'gulp-autoprefixer' );
-var plumber      = require( 'gulp-plumber' );
-var sourcemaps   = require( 'gulp-sourcemaps' );
-var changed      = require( 'gulp-changed' );
-var imagemin     = require( 'gulp-imagemin' );
-var imageminJpg  = require( 'imagemin-jpeg-recompress' );
-var imageminPng  = require( 'imagemin-pngquant' );
-var imageminGif  = require( 'imagemin-gifsicle' );
-var svgmin       = require( 'gulp-svgmin' );
-var concat       = require( 'gulp-concat' );
-var jshint       = require( 'gulp-jshint' );
-var rename       = require( 'gulp-rename' );
-var uglify       = require( 'gulp-uglify' );
-var browserSync  = require( 'browser-sync' );
+const gulp         = require( 'gulp' );
+const sass         = require( 'gulp-sass' );
+const autoprefixer = require( 'gulp-autoprefixer' );
+const plumber      = require( 'gulp-plumber' );
+const sourcemaps   = require( 'gulp-sourcemaps' );
+const changed      = require( 'gulp-changed' );
+const imagemin     = require( 'gulp-imagemin' );
+const imageminJpg  = require( 'imagemin-jpeg-recompress' );
+const imageminPng  = require( 'imagemin-pngquant' );
+const imageminGif  = require( 'imagemin-gifsicle' );
+const svgmin       = require( 'gulp-svgmin' );
+const concat       = require( 'gulp-concat' );
+const jshint       = require( 'gulp-jshint' );
+const rename       = require( 'gulp-rename' );
+const uglify       = require( 'gulp-uglify' );
+const browserSync  = require( 'browser-sync' );
 
 // Sass
 gulp.task( 'sass', function(){
