@@ -3,6 +3,7 @@ var sass         = require( 'gulp-sass' );
 var autoprefixer = require( 'gulp-autoprefixer' );
 var plumber      = require( 'gulp-plumber' );
 var sourcemaps   = require( 'gulp-sourcemaps' );
+var progeny      = require( 'gulp-progeny' );
 var changed      = require( 'gulp-changed' );
 var imagemin     = require( 'gulp-imagemin' );
 var imageminJpg  = require( 'imagemin-jpeg-recompress' );
@@ -19,6 +20,7 @@ var browserSync  = require( 'browser-sync' );
 gulp.task( 'sass', function(){
     gulp.src( './src/assets/sass/**/*.scss' )
         .pipe( plumber() )
+        .pipe( progeny() )
         .pipe( sourcemaps.init() )
         .pipe( sass( {
             outputStyle: 'expanded'
